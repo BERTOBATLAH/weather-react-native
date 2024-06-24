@@ -15,8 +15,8 @@ const MainApp = () => {
       screenOptions={{ headerShown: false }}
       tabBar={(props) => <BottomTabs {...props} />}
     >
-      <Tab.Screen name="Location" component={LocationScreen} />
-      <Tab.Screen name="Home" component={HomeScreen} />
+      {/*<Tab.Screen name="Location" component={LocationScreen} />
+      <Tab.Screen name="Home" component={HomeScreen} />*/}
       <Tab.Screen name="Weather" component={WeatherScreen} />
     </Tab.Navigator>
   );
@@ -33,8 +33,8 @@ const Router = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Navigation" component={Navigation} />
-      <Stack.Screen name="Location" component={LocationScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
+      {/*<Stack.Screen name="Location" component={LocationScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} />*/}
       <Stack.Screen name="Weather" component={WeatherScreen} />
       <Stack.Screen name="MainApp" component={MainApp} />
     </Stack.Navigator>
